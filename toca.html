@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TOCA AL STICKMAN</title>
+        <style>
+     button{
+    background: #282a3a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    front-size: 18pt;
+    front-weight: bold;
+}
+        </style>
+</head>
+<body>
+    <div>
+    <center>
+    <h1><strong><em>TOCA AL STICKMAN</em></strong></h1>
+    <hr>
+    <a href="/nivel01.html"><button><strong>EMPEZAR</strong></button></a>
+    <hr>
+    </center>
+    <marquee direction="right" scrollamount="30">
+            <img src="XSRo.gif" height="100" width="100" alt="Imagen" id="imagen" onclick="contarClicks()">
+ </marquee>
+    </div>
+    <hr>
+    <br>
+    <a href="/index.html"><button><strong>MENU</strong></button></a>
+    <p id="contador">0</p>
+
+<script>
+    let contador = 0;
+
+    function contarClicks() {
+        contador++;
+        document.getElementById('contador').innerHTML = contador;
+    }
+</script>
+</body>
+</html>
